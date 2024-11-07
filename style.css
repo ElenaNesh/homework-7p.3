@@ -1,0 +1,1066 @@
+body{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-screen {
+    background-image: url(/images/backgroundmain.png);
+    height: 100%;
+    background-size:cover;
+    padding-bottom: 250px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-left: 15%;
+    padding-top: 40px;
+    padding-right: 15%;
+    padding-bottom: 20px;
+    align-items: flex-start;
+}
+
+#sweetbox {
+    min-width: 180px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+    flex-grow: 2;
+    align-self: flex-start;
+}
+
+.block1 {
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    align-self: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    justify-self: flex-end;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+
+.block1>img {
+    justify-self: end;
+    padding-right: 12px;
+}
+.block1>p {
+    margin-top: 0px;
+    font-size: 0.75rem;
+}
+
+.block2 {
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: end;
+    margin-top: 0px;
+    padding-top: 0px;
+    justify-self: flex-end;
+}
+
+.block2>img {
+    justify-self: end;
+    grid-row: 1/3;
+    padding-right: 12px;
+}
+
+.block2>p {
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+.phone {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.working-time {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.about {
+    margin-top: 88px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-left: 15%;
+    width: 40%;
+}
+
+.delicious {
+    grid-column: 1/4;
+}
+
+#btndelicious {
+    max-width: fit-content;
+    align-self: flex-start;
+    justify-content: start;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+    border-style: hidden;
+}
+
+#aboutcakes {
+    max-width: fit-content;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#willcook {
+    max-width: fit-content;
+    margin-top: 0px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#gotocatalog {
+    background-color: rgb(254, 216, 76);
+    border-radius: 8px;
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin-top: 0px;
+    border-style: hidden;
+}
+
+.types {
+    padding-left: 20px;
+}
+
+.for-less-then-550 {
+    width: 100%;
+    display: none;
+}
+
+.secondscreen {
+    background-image: url(/images/bgscreen2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text2screen {
+        display: flex;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 2.1rem;
+        font-weight: 500;
+        justify-content: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    gap: 20px;
+        }
+
+.cake-item {
+    margin-bottom: 40px;
+    
+}
+.cake-item img {max-width: 100%;}
+
+.cakename {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.cakedescription {
+    font-weight: 400;
+    margin-bottom: 24px;
+    margin-top: 0px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 14px;
+    margin-top: 0px;
+}
+
+.cake-item button {
+    border-radius: 8px;
+    background: rgb(254, 216, 76);
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 0px;
+    border-style: hidden;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.about-chief {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.who-is-chief {
+    background: rgb(242, 246, 250);
+    padding: 30px 50px 30px 50px;
+    width: 40%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.who-is-header{
+    margin: 0;
+    font-size: 2.5rem;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.benefits-list {
+    list-style-type: none;
+    font-size: 1.12rem;
+    align-self: flex-start;
+    padding: 0px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.benefits-list li {
+    padding: 10px;
+}
+
+.benefits-list li:before {
+    content: '•';
+    padding: 5px;
+    color: #00c4cc;
+}
+
+.ask-chief {
+    border-radius: 8px;
+    background: rgb(254, 216, 76);
+    font-size: 1.12rem;
+    text-align: center;
+    border-style: none;
+    padding: 30px 50px 30px 50px;
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.about-chief > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    grid-column: 2/3;
+    grid-row: 1/5 ;
+
+}
+
+.header-block4{
+    margin-top: 100px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.text-block4 {
+    font-size: 1.12rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 400px);
+    gap: 5px;
+}
+
+.wrapper > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(8, 17, 48);
+    background-image: url(/images/bgscreen3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+#order-form {
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 40vh;
+    justify-items: center;
+    padding: 10px;    
+}
+
+#put-your-phone {
+    color: rgb(46, 54, 62);
+    font-size: 1.87rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#we-will-call {
+    margin-top: 0px;
+    color: rgb(46, 54, 62);
+    font-size: 1.31rem;
+    font-weight: 400;
+    margin-bottom: 37px;
+}
+
+form>input {
+    border-style: dashed;
+    width: 330px;
+    height: 75px;
+    margin-right: 20px;
+    padding-left: 30px;
+}
+
+#submit-button {
+    background-color: rgb(254, 216, 76);
+    width: 330px;
+    height: 80px;
+    border-radius: 5px;
+    border-style: hidden;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+#agreement {
+    height: 15px;
+    width: 15px;
+    
+}
+
+.agreement {
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    display: flex;
+    align-items: start;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10vh;
+    
+    justify-items: center;
+    color: rgb(126, 134, 142);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+#ogrn {
+    grid-column: span 3;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+
+    #btndelicious {
+        font-size: 0.70rem;
+        margin-bottom: 15px;
+    }
+    
+    #aboutcakes {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    
+    #willcook {
+        font-size: 0.8rem;
+    }
+    
+    #gotocatalog {
+        font-size: 0.8rem;
+        align-self: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .types {
+        font-size: 0.8rem;
+        grid-column: 2/4;
+    }
+
+    .about {
+        width: 40%;
+        margin-top: 15vh;
+        margin-left: 10%;
+    }
+
+    .main-screen {
+        background-image: url(/images/backgroundmain.png);
+        height: 100%;
+        background-size:cover;
+        padding-bottom: 250px;
+    }
+    
+    .phone {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    
+    .working-time {
+        font-size: 0.6rem;
+        font-weight: 400;
+    }
+    
+    .header-container {
+        padding-left: 10%;
+        padding-top: 40px;
+        padding-right: 10%;
+        padding-bottom: 10px;
+}
+
+#sweetbox {
+    font-size: 1rem;
+}
+
+.text2screen {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.7rem;
+}
+
+.gallery {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    gap: 15px;
+        }
+
+.about-chief {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.who-is-chief {
+    background: rgb(242, 246, 250);
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.who-is-header{
+    font-size: 1.5rem;
+}
+
+.benefits-list {
+    font-size: 1rem;
+}
+
+.ask-chief {
+    border-radius: 8px;
+    background: rgb(254, 216, 76);
+    font-size: 1rem;
+    text-align: center;
+    border-style: none;
+    padding: 20px 40px 20px 40px;
+}
+
+.header-block4{
+    margin-top: 80px;
+    font-size: 2rem;
+}
+
+.text-block4 {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#put-your-phone {
+    color: rgb(46, 54, 62);
+    font-size: 1.2rem;
+}
+#we-will-call {
+    margin-top: 0px;
+    color: rgb(46, 54, 62);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 37px;
+}
+
+form>input {
+    border-style: dashed;
+    width: 90%;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+#submit-button {
+    width: 99%;
+    height: 60px;
+    font-size: 1rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5vh;
+}
+
+.wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 300px);
+}
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 550px) {
+    .main-screen {
+        height: 100%;
+        background-size: cover;
+        background-image: url(/images/backgroundmain.png);
+        background-repeat: no-repeat;
+        padding-bottom: 0px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        padding-left: 5%;
+        padding-top: 10px;
+        padding-right: 5%;
+    }
+    #sweetbox {
+        min-width: 180px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 0;
+        flex-grow: 2;
+        align-self: flex-start;
+    }
+    
+    .block1 {
+        display: grid;
+        grid-template-columns: 1fr 130px;
+        align-self: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        justify-self: flex-end;
+        align-self: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .block1>img {
+        justify-self: end;
+        padding-right: 12px;
+    }
+    .block1>p {
+        margin-top: 0px;
+        font-size: 0.75rem;
+    }
+    
+    
+    .block2 {
+        align-self: flex-start;
+        display: grid;
+        padding-left: 10px;
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: 30px 3fr;
+    }
+    
+    .block2>img {
+        justify-self: end;
+        grid-row: 1/3;
+        padding-right: 12px;
+    }
+    
+    .block2>p {
+        margin: 0px;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    
+    .phone {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    
+    .working-time {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    
+    .about {
+        width: 50%;
+        margin-top: 1vh;
+        margin-left: 5%;
+    }
+
+    #btndelicious {
+        font-size: 0.70rem;
+        margin-bottom: 15px;
+    }
+
+    #aboutcakes {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    #willcook {
+        font-size: 1rem;
+    }
+    
+    #gotocatalog {
+        font-size: 0.8rem;
+        align-self: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .types {
+        display: none;
+    }
+
+    .text2screen {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .gallery {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15px;
+        gap: 15px;
+            }
+
+            .about-chief {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(200px,1fr));
+                grid-template-rows: repeat(2, min-content);
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                justify-items: flex-start;
+                align-items: center;
+            }
+            
+            .who-is-chief {
+                background: rgb(242, 246, 250);
+                text-align: center;
+                width: 100%;
+                padding: 10px 0 10px 0;
+                grid-row: 1/2;
+                grid-column: 1/3;
+            }
+            
+            .who-is-header{
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: 500;
+                grid-row: 2/3;
+                grid-column: 1/2;
+            }
+            
+            .benefits-list {
+                list-style-type: none;
+                font-size: 1rem;
+                align-self: flex-start;
+                padding: 0px;
+                grid-row: 3/4;
+                grid-column: 1/3;
+            }
+            
+            .benefits-list li {
+                padding: 5px;
+                text-align: center;
+            }
+            
+            .benefits-list li:before {
+                content: '•';
+                padding: 5px;
+                color: #00c4cc;
+            }
+            
+            .ask-chief {
+                border-radius: 8px;
+                background: rgb(254, 216, 76);
+                font-size: 1rem;
+                text-align: center;
+                border-style: none;
+                width: 100%;
+                padding: 30px 50px 30px 50px;
+                grid-row: 4/5;
+                grid-column: 1/3;
+            }
+            
+            .about-chief > img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                grid-column: 2/3;
+                grid-row: 2/3 ;
+            
+            }
+            .header-block4{
+                margin-top: 80px;
+                font-size: 1.5rem;
+            }
+            
+            .text-block4 {
+                font-size: 1rem;
+                margin-top: 15px;
+            }
+    .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(2, 250px);}
+    }
+
+    #put-your-phone {
+        color: rgb(46, 54, 62);
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #we-will-call {
+        margin-top: 0px;
+        color: rgb(46, 54, 62);
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 37px;
+    }
+    
+    form>input {
+        border-style: dashed;
+        width: 90%;
+        height: 60px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+    }
+    
+    #submit-button {
+        width: 99%;
+        height: 60px;
+        font-size: 1rem;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .footer {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5vh;
+    }
+
+    #order-form {
+        margin-top: 15vh;
+    }
+
+@media screen and (max-width: 550px) {
+    .main-screen {
+        background-image: none;
+        background-color: rgb(12, 12, 34);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 0px;
+        height: 100%;
+    }
+
+    .header-container {
+        flex-direction: column;
+        padding-left: 2%;
+        padding-top: 10px;
+        padding-right: 2%;
+        
+    }
+    #sweetbox {
+        width: 100%;;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        font-weight: 500;
+        margin: 0;
+        flex-grow: 2;
+        text-align: center;
+    }
+    
+    .block1 {
+        display: none;
+    }
+
+    .block1>p {
+        margin-top: 0px;
+        font-size: 0.75rem;
+    }
+    
+    
+    .block2 {
+        align-self: flex-start;
+        display: grid;
+        padding-left: 10px;
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: 30px 3fr;
+    }
+    
+    .block2>img {
+        justify-self: end;
+        grid-row: 1/3;
+        padding-right: 12px;
+    }
+    
+    .block2>p {
+        margin: 0px;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    
+    .phone {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    
+    .working-time {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    
+    .about {
+        width: 80%;
+        margin-top: 1vh;
+        margin-left: 5%;
+    }
+    .about {
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-left: 10%;
+    }
+
+    #btndelicious {
+        display: none;
+    }
+
+    #aboutcakes {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    
+    #willcook {
+        font-size: 0.8rem;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    #gotocatalog {
+        font-size: 0.8rem;
+        align-self: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .for-less-then-550 {
+        display: block;
+        grid-row: 1/5;
+        grid-column: 2/4;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .types {
+        display: none;
+    }
+
+    .text2screen {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding-left: 15%;
+        padding-right: 15%;
+        gap: 10px;
+            }
+    
+    .cake-item {
+        margin-bottom: 10px;
+        
+    }
+    .cake-item img {max-width: 100%;}
+    
+    .cakename {
+        font-size: 1rem;
+        margin: 0px;
+    }
+    
+    .cakedescription {
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    .price {
+        font-size: 1rem;
+        margin-bottom: 14px;
+        margin-top: 5px;
+    }
+    
+
+
+            .about-chief {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+                grid-template-rows: repeat(2, min-content);
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                justify-items: flex-start;
+                align-items: center;
+            }
+            
+            .who-is-chief {
+                background: rgb(242, 246, 250);
+                text-align: center;
+                width: 100%;
+                padding: 10px 0 10px 0;
+                grid-row: 1/2;
+                grid-column: 1/3;
+            }
+            
+            .who-is-header{
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 500;
+                grid-row: 2/3;
+                grid-column: 1/2;
+            }
+            
+            .benefits-list {
+                list-style-type: none;
+                font-size: 0.8rem;
+                align-self: flex-start;
+                padding: 0px;
+                grid-row: 3/4;
+                grid-column: 1/3;
+            }
+            
+            .benefits-list li {
+                padding: 5px;
+                text-align: center;
+            }
+            
+            .benefits-list li:before {
+                content: '•';
+                padding: 5px;
+                color: #00c4cc;
+            }
+            
+            .ask-chief {
+                border-radius: 8px;
+                background: rgb(254, 216, 76);
+                font-size: 1rem;
+                text-align: center;
+                border-style: none;
+                width: 100%;
+                padding: 30px 50px 30px 50px;
+                grid-row: 4/5;
+                grid-column: 1/3;
+            }
+            
+            .about-chief > img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                grid-column: 2/3;
+                grid-row: 2/3 ;
+            
+            }
+            .header-block4{
+                margin-top: 80px;
+                font-size: 1.5rem;
+            }
+            
+            .text-block4 {
+                font-size: 1rem;
+                margin-top: 15px;
+            }
+    .wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    #put-your-phone {
+        font-size: 1rem;
+    }
+
+    #we-will-call {
+        font-size: 0.8rem;
+    }
+    
+    form>input {
+        width: 80%;
+        height: 40px;
+    }
+    
+    #submit-button {
+        font-size: 0.8rem;
+    }
+    
+    .footer {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5vh;
+        font-size: 0.6rem;
+        background-size: contain;
+    }
+    #order-form {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    body{
+        font-size: 24px;
+    }
+}
